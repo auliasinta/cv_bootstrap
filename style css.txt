@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial, sans-serif;
+    background-color: #f4f4f4;
+}
+header {
+    background: url(353x278.jpg);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
