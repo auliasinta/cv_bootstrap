@@ -1,78 +1,96 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-header .header{
-  background-color: #fff;
-  height: 45px;
-}
-header a img{
-  width: 134px;
-margin-top: 4px;
-}
-.login-page {
-  width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
-}
-.login-page .form .login{
-  margin-top: -31px;
-margin-bottom: 26px;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #FFFFFF;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form input {
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  outline: 0;
-  background-color: #328f8a;
-  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-}
-.form .message {
-  margin: 15px 0 0;
-  color: #b3b3b3;
-  font-size: 12px;
-}
-.form .message a {
-  color: #4CAF50;
-  text-decoration: none;
-}
+<style type="text/css">
+        /* Reset default margin and padding */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
 
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
+        /* Gaya header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
 
-body {
-  background-color: #328f8a;
-  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+        /* Gaya sidebar */
+        aside {
+            background-color: #007bff; /* Warna biru pada sidebar */
+            width: 200px;
+            float: left;
+            height: 160vh;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #fff; /* Warna teks putih */
+            display: block;
+        }
+
+        aside ul li:hover {
+            background-color: #0056b3; /* Warna biru saat hover */
+        }
+
+        /* Gaya konten utama */
+        main {
+            margin-left: 220px; /* Sesuaikan dengan lebar sidebar */
+            padding: 20px;
+            background-color: #f4f4f4; /* Latar belakang abu-abu pada konten utama */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section:last-child {
+            margin-bottom: 0; /* Menghapus margin bawah terakhir */
+        }
+
+        /* Gaya footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            clear: both;
+        }
+
+        /* Tampilan responsif untuk layar yang lebih kecil */
+        @media (max-width: 768px) {
+            aside {
+                width: 100%;
+                float: none;
+                height: auto;
+            }
+
+            main {
+                margin-left: 0;
+            }
+        }
+        /* Gaya untuk grafik */
+        canvas {
+            max-width: 70%; /* Maksimum lebar grafik */
+            height: 1%; /* Tinggi disesuaikan agar proporsi tetap */
+        }
+
+        /* Gaya untuk gambar produk */
+        .product {
+            text-align: center;
+        }
+
+        .product img {
+            width: 300px; /* Atur lebar gambar */
+            height: auto; /* Sesuaikan tinggi agar proporsi gambar tetap */
+            margin-bottom: 10px; /* Spasi bawah */
+        }
+    </style>
