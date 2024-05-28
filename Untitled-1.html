@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+    <link rel="stylesheet" href="travel.css" /> 
+</head>
+<body>
+  <h2>Login Form</h2>
+  <form id="login-form">
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" required><br>
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" required><br>
+    <label for="captcha">Captcha:</label><br>
+    <input type="captcha" name="captcha" required><br>
+    <input type="submit" name="login" value="Login">
+  </form>
+  <script>
+    const form = document.getElementById('login-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const username = document.querySelector('#username').value;
+      const password = document.querySelector('#password').value;
+      const captcha = grecaptcha.getResponse();
+      if (!captcha) {
+        alert('Please check the captcha form.');
+        return;
+      }
+      // Proses login
+      // ...
+    });
+  </script>
+</body>
+</html>

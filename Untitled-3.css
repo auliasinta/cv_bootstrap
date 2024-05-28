@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+}
+h2 {
+  color: #333;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #111;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #947272;
+  border-radius: 5px;
+}
+.g-recaptcha {
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 30px;
+  background-color: #204722;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
